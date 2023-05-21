@@ -4,12 +4,6 @@ import { toast } from "react-toastify";
 const Blog = () => {
   const componentRef = useRef();
 
-  const handlePrint = useReactToPrint({
-    content: () => componentRef.current,
-    documentTitle: "emp-data",
-    onAfterPrint: () => toast("success"),
-  });
-
   const questions = [
     {
       id: 1,
@@ -53,10 +47,6 @@ const Blog = () => {
             </div>
 
             <div>
-              <strong class="rounded btn btn-sm border border-indigo-500 bg-indigo-500 px-3 py-1.5 text-[10px] font-medium text-white">
-                DOWNLOAD PDF
-              </strong>
-
               <h3 class=" text-lg font-medium sm:text-xl ">
                 <a href="" class="hover:underline">
                   {" "}
