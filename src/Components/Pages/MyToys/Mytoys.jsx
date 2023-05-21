@@ -11,7 +11,7 @@ const Mytoys = () => {
 
   useEffect(() => {
     fetch(
-      `http://localhost:5000/addtoys/email/${user?.email}?sortOrder=${sortOrder}`
+      `https://kids-toys-website-servercode-code.vercel.app/addtoys/email/${user?.email}?sortOrder=${sortOrder}`
     )
       .then((response) => response.json())
       .then((data) => {
@@ -25,13 +25,16 @@ const Mytoys = () => {
   const handleDelete = (id) => {
     const proceed = confirm("Are you sure you want to delete?");
     if (proceed) {
-      fetch(`http://localhost:5000/addtoys/${id}`, {
-        method: "DELETE",
-        headers: {
-          "content-type": "application/json",
-        },
-        body: JSON.stringify({ status: "confirm" }),
-      })
+      fetch(
+        `https://kids-toys-website-servercode-code.vercel.app/addtoys/${id}`,
+        {
+          method: "DELETE",
+          headers: {
+            "content-type": "application/json",
+          },
+          body: JSON.stringify({ status: "confirm" }),
+        }
+      )
         .then((res) => res.json())
         .then((data) => {
           console.log(data);

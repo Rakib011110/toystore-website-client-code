@@ -33,7 +33,7 @@ const AddToys = () => {
     };
     console.log(addToData);
 
-    fetch("http://localhost:5000/addtoys", {
+    fetch("https://kids-toys-website-servercode-code.vercel.app/addtoys", {
       method: "POST",
 
       headers: {

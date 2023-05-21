@@ -6,7 +6,7 @@
 //   const [data, setData] = useState([]);
 //   console.log(data);
 //   useEffect(() => {
-//     fetch("http://localhost:5000/category")
+//     fetch("https://kids-toys-website-servercode-code.vercel.app/category")
 //       .then((res) => res.json())
 //       .then((data) => setData(data));
 //   }, []);

@@ -12,7 +12,7 @@ const Toys = () => {
   const [selectedToy, setSelectedToy] = useState(null);
   const { user } = useContext(AuthContext);
   useEffect(() => {
-    fetch("http://localhost:5000/toys")
+    fetch("https://kids-toys-website-servercode-code.vercel.app/toys")
       .then((res) => res.json())
       .then((data) => setCategories(data));
   }, []);
