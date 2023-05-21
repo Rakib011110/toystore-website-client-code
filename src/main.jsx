@@ -10,6 +10,12 @@ import Register from "./Components/Pages/Register/Register.jsx";
 import Blog from "./Components/Pages/Blog/Blog.jsx";
 import Error from "./Components/Pages/Share/Error/Error.jsx";
 import AuthProvider from "./Provider/AuthProvider.jsx";
+import ToyDetails from "./Components/ToysCategory/ToyDetails.jsx";
+import AddToys from "./Components/Pages/AddToys/AddToys.jsx";
+import AllToys from "./Components/Pages/AllToys/AllToys.jsx";
+import Mytoys from "./Components/Pages/MyToys/Mytoys.jsx";
+import UpdateToys from "./Components/Pages/UpdateToys/UpdateToys.jsx";
+import PrivetRouter from "./PrivetRouter/PrivetRouter.jsx";
 
 const router = createBrowserRouter([
   {
@@ -30,8 +36,47 @@ const router = createBrowserRouter([
         element: <Register />,
       },
       {
+        path: "/toy/:id",
+        element: (
+          <PrivetRouter>
+            {" "}
+            <ToyDetails></ToyDetails>
+          </PrivetRouter>
+        ),
+        // http://localhost:5000
+        loader: ({ params }) =>
+          fetch(`http://localhost:5000/addtoys/${params.id}`),
+      },
+      {
         path: "/blog",
         element: <Blog />,
+      },
+      {
+        path: "/addAToy",
+        element: <AddToys></AddToys>,
+      },
+      {
+        path: "allToys",
+        element: (
+          <PrivetRouter>
+            {" "}
+            <AllToys></AllToys>{" "}
+          </PrivetRouter>
+        ),
+      },
+      {
+        path: "/mytoys",
+        element: (
+          <PrivetRouter>
+            <Mytoys></Mytoys>
+          </PrivetRouter>
+        ),
+      },
+      {
+        path: "/addtoys/:id",
+        element: <UpdateToys></UpdateToys>,
+        loader: ({ params }) =>
+          fetch(`http://localhost:5000/addtoys/${params.id}`),
       },
       {
         path: "*",

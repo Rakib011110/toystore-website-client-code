@@ -1,0 +1,67 @@
+[
+  {
+    "category_id": "6466650d916de6f185acf5cc",
+
+    "picture": "https://rukminim1.flixcart.com/image/416/416/k5pn6vk0/vehicle-pull-along/9/f/p/lamborghini-centenario-1-32-scale-diecast-metal-alloy-pull-back-original-imafgtwjp7mnnahh.jpeg?q=70",
+    "name": "Super Speedster",
+    "price": 29.99,
+    "rating": 4.5
+  },
+  {
+    "category_id": "6466650d916de6f185acf5cc",
+
+    "picture": "https://5.imimg.com/data5/SE/AG/FS/SELLER-92778759/lamborghini-die-cast-metal-alloy-sports-car-toy-1000x1000.jpg",
+    "name": "Racing Champion",
+    "price": 24.99,
+    "rating": 4.2
+  },
+
+  {
+    "category_id": "6466650d916de6f185acf5cd",
+    "picture": "https://m.media-amazon.com/images/I/71XujdE+o+L._AC_UF894,1000_QL80_.jpg",
+    "name": "Mighty Hauler",
+    "price": 19.99,
+    "rating": 4.3
+  },
+  {
+    "category_id": "6466650d916de6f185acf5cd",
+
+    "picture": "https://m.media-amazon.com/images/I/51FUuj7ljUL._AC_.jpg",
+    "name": "Monster Transporter",
+    "price": 22.99,
+    "rating": 4.0
+  },
+
+  {
+    "category_id": "6466650d916de6f185acf5ce",
+
+    "picture": "https://m.media-amazon.com/images/I/71VNxmNvOHL._AC_UF894,1000_QL80_.jpg",
+    "name": "Fire Rescue Hero",
+    "price": 17.99,
+    "rating": 4.4
+  },
+  {
+    "category_id": "6466650d916de6f185acf5ce",
+
+    "picture": "https://m.media-amazon.com/images/I/61G9usGOw6L._AC_UF1000,1000_QL80_.jpg",
+    "name": "Emergency Response",
+    "price": 15.99,
+    "rating": 4.3
+  },
+  {
+    "category_id": "6466650d916de6f185acf5cf",
+
+    "picture": "https://cdn.shopify.com/s/files/1/1524/5012/products/oay5kftnlyq_800x539.jpg?v=1663273450",
+    "name": "Patrol Pursuit",
+    "price": 18.99,
+    "rating": 4.7
+  },
+  {
+    "category_id": "6466650d916de6f185acf5d0",
+
+    "picture": "https://ae01.alicdn.com/kf/S62f7dcf4ed974af4a8b795ed432abd3cs/1-32-Toy-Car-Mini-Police-Metal-Toy-Alloy-Super-Car-Diecasts-Toy-Vehicles-Car-Model.jpg",
+    "name": "Law Enforcement Cruiser",
+    "price": 16.99,
+    "rating": 4.5
+  }
+]

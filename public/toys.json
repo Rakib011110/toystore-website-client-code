@@ -1,0 +1,78 @@
+[
+  {
+    "CategoryName": "Sports Cars",
+    "toys": [
+      {
+        "_id": "1",
+        "picture": "",
+        "name": "",
+        "price": 29.99,
+        "rating": 4.5
+      },
+      {
+        "_id": "2",
+        "picture": "",
+        "name": "",
+        "price": 24.99,
+        "rating": 4.2
+      }
+    ]
+  },
+  {
+    "CategoryName": "Trucks",
+    "toys": [
+      {
+        "_id": "3",
+        "picture": "",
+        "name": "",
+        "price": 19.99,
+        "rating": 4.3
+      },
+      {
+        "_id": "4",
+        "picture": "",
+        "name": "",
+        "price": 22.99,
+        "rating": 4
+      }
+    ]
+  },
+  {
+    "CategoryName": "",
+    "toys": [
+      {
+        "_id": "5",
+        "picture": "",
+        "name": "",
+        "price": 17.99,
+        "rating": 4.4
+      },
+      {
+        "_id": "6",
+        "picture": "",
+        "name": "",
+        "price": 15.99,
+        "rating": 4.3
+      }
+    ]
+  },
+  {
+    "CategoryName": "Mini Police Cars",
+    "toys": [
+      {
+        "_id": "7",
+        "picture": "",
+        "name": "pulice car",
+        "price": 18.99,
+        "rating": 4.7
+      },
+      {
+        "_id": "8",
+        "picture": "https://ae01.alicdn.com/kf/S62f7dcf4ed974af4a8b795ed432abd3cs/1-32-Toy-Car-Mini-Police-Metal-Toy-Alloy-Super-Car-Diecasts-Toy-Vehicles-Car-Model.jpg",
+        "name": "Law Enforcement Cruiser",
+        "price": 16.99,
+        "rating": 4.5
+      }
+    ]
+  }
+]

@@ -22,17 +22,14 @@ const Login = () => {
 
     signin(email, password)
       .then((userCredential) => {
-        // Signed in
         const user = userCredential.user;
         console.log(user);
         navigate(from, { replace: true });
         if (user) {
           toast("Acount login Success");
         }
-        // ...
       })
       .catch((error) => {
-        const errorCode = error.code;
         const errorMessage = error.message;
         console.log(errorMessage);
         setErr(errorMessage);

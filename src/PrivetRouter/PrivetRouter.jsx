@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import { AuthContext } from "../Provider/AuthProvider";
-import { useLocation } from "react-router-dom";
+import { Navigate, useLocation } from "react-router-dom";
+import Swal from "sweetalert2";
 
 const PrivetRouter = ({ children }) => {
   const { user, loading } = useContext(AuthContext);
@@ -18,8 +19,17 @@ const PrivetRouter = ({ children }) => {
     return children;
   }
 
+  const privet = () => {
+    Swal.fire({
+      icon: "error",
+      title: "Oops...",
+      text: "Something went wrong!",
+      footer: '<a href="">Why do I have this issue?</a>',
+    });
+  };
+
   return (
-    <Navigate to={"/login"} state={{ form: location }} replace>
+    <Navigate to="/login" state={{ form: location }} replace>
       {" "}
     </Navigate>
   );

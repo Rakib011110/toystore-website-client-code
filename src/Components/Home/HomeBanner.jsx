@@ -1,11 +1,17 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Courosel from "../Common/Courosel";
 import { Player, Controls } from "@lottiefiles/react-lottie-player";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const HomeBanner = () => {
+  useEffect(() => {
+    Aos.init();
+  }, []);
+
   return (
-    <div>
-      <div className="mt-5">
+    <div data-aos-duration="1000" data-aos="slide-up">
+      <div className="mt-5" data-aos="fade">
         <div className="flex  mx-auto flex-col md:flex-row bg-gray-100">
           <div className="md:w-1/2">
             <a href="#" className="group relative block bg-black">
