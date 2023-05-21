@@ -20,11 +20,6 @@ const Home = () => {
       />
 
       <div>
-        {/* <HomeBanner
-          data-aos="fade-up"
-          data-aos-anchor=".other-element"
-        ></HomeBanner> */}
-
         <HeaderBanner></HeaderBanner>
 
         <div className="mt-10">
