@@ -1,5 +1,4 @@
 import React, { useRef } from "react";
-import { useReactToPrint } from "react-to-print";
 import { toast } from "react-toastify";
 
 const Blog = () => {
@@ -36,10 +35,7 @@ const Blog = () => {
   ];
 
   return (
-    <div
-      ref={componentRef}
-      className="mt-4 grid grid-cols-1 gap-5 container mx-auto"
-    >
+    <div className="mt-4 grid grid-cols-1 gap-5 container mx-auto">
       {questions.map((q) => (
         <article class="rounded-xl bg-white p-4 ring ring-indigo-50 sm:p-6 lg:p-8">
           <div class="flex items-start sm:gap-8">
@@ -57,10 +53,7 @@ const Blog = () => {
             </div>
 
             <div>
-              <strong
-                onClick={handlePrint}
-                class="rounded btn btn-sm border border-indigo-500 bg-indigo-500 px-3 py-1.5 text-[10px] font-medium text-white"
-              >
+              <strong class="rounded btn btn-sm border border-indigo-500 bg-indigo-500 px-3 py-1.5 text-[10px] font-medium text-white">
                 DOWNLOAD PDF
               </strong>
 
